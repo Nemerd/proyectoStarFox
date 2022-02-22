@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <title>Inicio</title>
+</head>
+
+<body>
+    <nav class="navegacion">
+        <button class="botonMenu">Menú</button>
+        <ul class="listaDeNavegacion">
+            <li><a href="./index.html" class="sinSubrayado">Inicio</a></li>
+            <li><a href="./pages/personajes.html" class="sinSubrayado">Personajes</a></li>
+            <li><a href="./pages/powerups.html" class="sinSubrayado">Power-ups</a></li>
+            <li><a href="./pages/vehiculos.html" class="sinSubrayado">Vehículos</a></li>
+            <li><a href="./pages/enemigos.html" class="sinSubrayado">Enemigos</a></li>
+        </ul>
+    </nav>
+
+    <div class="portada">
+        <h1 class="titulo">Star fox</h1>
+        <img src="./images/StarFoxTeam.jpeg" alt="El equipo Star Fox" width="100%">
+
+        <div class="descripcion">
+            <p>Star Fox es una serie de videojuegos de ciencia ficción shooter creado por Nintendo, con animales
+                antropomorfos
+                como personajes. El juego toma lugar mayormente en el espacio exterior, en el Sistema Lylat. Los juegos
+                de la
+                serie fueron lanzados para las consolas
+            </p>
+            <ul>
+                <li>Super Nintendo</li>
+                <li>Nintendo 64</li>
+                <li>Nintendo Game Cube</li>
+                <li>Nintendo DS</li>
+                <li>Nintendo 3DS</li>
+                <li>Nintendo Wii U</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contenedorDeTarjetas">
+        <div class="tarjeta">
+            <a href="./pages/personajes.html" class="sinSubrayado">Personajes</a>
+            <img src="./images/StarFoxTeam.jpeg" alt="El equipo Star Fox" class="imgDeTarjeta">
+        </div>
+        <div class="tarjeta">
+            <a href="./pages/powerups.html" class="sinSubrayado">Power-ups</a>
+            <img src="./images/powerups.jpeg" alt="Bomba inteligente" class="imgDeTarjeta">
+        </div>
+        <div class="tarjeta">
+            <a href="./pages/vehiculos.html" class="sinSubrayado">Vehículos</a>
+            <img src="./images/arwing.png" alt="Arwing" class="imgDeTarjeta">
+        </div>
+        <div class="tarjeta">
+            <a href="./pages/enemigos.html" class="sinSubrayado">Enemigos</a>
+            <img src="./images/andross.jpeg" alt="Andross" class="imgDeTarjeta">
+        </div>
+    </div>
+    <p class="formulario">
+        ¿Quieres contactarte? Déjanos tus datos y te enviaremos más información.
+    </p>
+    <form action="" class="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" />
+        <br>
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" />
+        <br>
+
+        <label for="mensaje">¿Quieres decir algo?</label>
+        <textarea name="mensaje" cols="30" rows="10"></textarea>
+        <br>
+
+        <label for="personajefavorito">¿Cuál es tu personaje favorito?</label>
+        <select name="personajefavorito" id="personajefavorito">
+            <option value="blank"></option>
+            <option value="fox">Fox McCloud</option>
+            <option value="falco">Falco Lombardi</option>
+            <option value="peppy">Peppy Hare</option>
+            <option value="slippy">Slippy Toad</option>
+        </select>
+        <br>
+
+        <label for="news">¿Quieres recibir noticias?</label>
+        <input type="checkbox" name="news" />
+        <br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar todo</button>
+    </form>
+    <footer>
+        ©2022 Moisés Omar Mubarqui
+    </footer>
+</body>
+
+</html>
