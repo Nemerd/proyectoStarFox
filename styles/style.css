@@ -68,6 +68,9 @@ body {
     top: 5%;
     right: 10%;
     font-size: 75px;
+    animation-name: aparecerDesaparecer;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 .contenedorDeTarjetas {
@@ -130,6 +133,22 @@ footer {
     grid-area: footer;
     background-color: blue;
     color: white;
+}
+
+/* Animaciones */
+
+@keyframes aparecerDesaparecer {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 /* Mobile last */
