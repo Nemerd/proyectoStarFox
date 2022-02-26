@@ -12,13 +12,13 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <!-- <link rel="stylesheet" href="./styles/style.css" /> -->
+    <link rel="stylesheet" href="./styles/style.css" />
 
     <title>Inicio</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -38,7 +38,7 @@
         </div>
     </nav>
 
-    <div class="portada">
+    <div class="container portada">
         <h1 class="titulo">Star fox</h1>
         <img src="./images/StarFoxTeam.jpeg" alt="El equipo Star Fox" width="100%">
 
@@ -60,65 +60,62 @@
         </div>
     </div>
 
-    <div class="contenedorDeTarjetas">
-        <div class="tarjeta">
+    <div class="container contenedorDeTarjetas">
+        <div class="card tarjeta card-body">
             <a href="./pages/personajes.html" class="sinSubrayado">
                 Personajes
-                <img src="./images/StarFoxTeam.jpeg" alt="El equipo Star Fox" class="imgDeTarjeta">
+                <img src="./images/StarFoxTeam.jpeg" alt="El equipo Star Fox" class="card-img-bottom">
             </a>
         </div>
-        <div class="tarjeta">
+        <div class="card tarjeta card-body">
             <a href="./pages/powerups.html" class="sinSubrayado">
                 Power-ups
-                <img src="./images/powerups.jpeg" alt="Bomba inteligente" class="imgDeTarjeta">
+                <img src="./images/powerups.jpeg" alt="Bomba inteligente" class="card-img-bottom">
             </a>
         </div>
-        <div class="tarjeta">
+        <div class="card tarjeta  card-body">
             <a href="./pages/vehiculos.html" class="sinSubrayado">
                 Vehículos
-                <img src="./images/arwing.png" alt="Arwing" class="imgDeTarjeta">
+                <img src="./images/arwing.png" alt="Arwing" class="card-img-bottom">
             </a>
         </div>
-        <div class="tarjeta">
+        <div class="card tarjeta card-body">
             <a href="./pages/enemigos.html" class="sinSubrayado">
                 Enemigos
-                <img src="./images/andross.jpeg" alt="Andross" class="imgDeTarjeta">
+                <img src="./images/andross.jpeg" alt="Andross" class="card-img-bottom">
             </a>
         </div>
     </div>
-    <p class="formulario">
-        ¿Quieres contactarte? Déjanos tus datos y te enviaremos más información.
-    </p>
-    <form action="" class="formulario">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" />
-        <br>
+    <div class="container-sm">
+        <p class="formulario">
+            ¿Quieres contactarte? Déjanos tus datos y te enviaremos más información.
+        </p>
+        <form action="" class="formulario">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" id="nombre" placeholder="John Doe" class="form-control" />
 
-        <label for="mail">Email:</label>
-        <input type="email" id="mail" />
-        <br>
+            <label for="mail" class="form-label">Email:</label>
+            <input type="email" id="mail" placeholder="john@doe.com" class="form-control" />
 
-        <label for="mensaje">¿Quieres decir algo?</label>
-        <textarea name="mensaje" cols="30" rows="10"></textarea>
-        <br>
+            <label for="mensaje" class="form-label">¿Quieres decir algo?</label>
+            <textarea name="mensaje" cols="30" rows="10" class="form-control"></textarea>
 
-        <label for="personajefavorito">¿Cuál es tu personaje favorito?</label>
-        <select name="personajefavorito" id="personajefavorito">
-            <option value="blank"></option>
-            <option value="fox">Fox McCloud</option>
-            <option value="falco">Falco Lombardi</option>
-            <option value="peppy">Peppy Hare</option>
-            <option value="slippy">Slippy Toad</option>
-        </select>
-        <br>
+            <label for="personajefavorito" class="form-label">¿Cuál es tu personaje favorito?</label>
+            <select name="personajefavorito" id="personajefavorito" class="form-control">
+                <option value="blank"></option>
+                <option value="fox">Fox McCloud</option>
+                <option value="falco">Falco Lombardi</option>
+                <option value="peppy">Peppy Hare</option>
+                <option value="slippy">Slippy Toad</option>
+            </select>
 
-        <label for="news">¿Quieres recibir noticias?</label>
-        <input type="checkbox" name="news" />
-        <br>
+            <label for="news" class="form-check-label">¿Quieres recibir noticias?</label>
+            <input type="checkbox" name="news" class="form-check-input" />
 
-        <button type="submit">Enviar</button>
-        <button type="reset">Borrar todo</button>
-    </form>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-warning">Borrar todo</button>
+        </form>
+    </div>
     <footer>
         ©2022 Moisés Omar Mubarqui
     </footer>
