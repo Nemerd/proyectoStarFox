@@ -17,15 +17,24 @@
 </head>
 
 <body>
-    <nav class="navegacion">
-        <button class="botonMenu">Menú</button>
-        <ul class="listaDeNavegacion">
-            <li><a href="../index.html" class="sinSubrayado">Inicio</a></li>
-            <li><a href="./personajes.html" class="sinSubrayado">Personajes</a></li>
-            <li><a href="./powerups.html" class="sinSubrayado">Power-ups</a></li>
-            <li><a href="./vehiculos.html" class="sinSubrayado">Vehículos</a></li>
-            <li><a href="./enemigos.html" class="sinSubrayado">Enemigos</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- id="navbarSupportedContent" permite actuar al tocar el botón hamburguesa -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="../index.html" class="nav-link active">Inicio</a></li>
+                    <li class="nav-item"><a href="../pages/personajes.html" class="nav-link">Personajes</a></li>
+                    <li class="nav-item"><a href="../pages/powerups.html" class="nav-link">Power-ups</a></li>
+                    <li class="nav-item"><a href="../pages/vehiculos.html" class="nav-link">Vehículos</a></li>
+                    <li class="nav-item"><a href="../pages/enemigos.html" class="nav-link">Enemigos</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <table border="1" class="tabla">
