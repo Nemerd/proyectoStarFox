@@ -15,6 +15,19 @@ body {
     background-image: url(../images/starry-background.jpg);
 }
 
+a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: hsl(4, 84%, 22%);
+}
+
 .navbar {
     background-color: chartreuse;
 }
