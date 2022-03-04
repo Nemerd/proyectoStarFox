@@ -32,6 +32,10 @@ a:active {
     background-color: chartreuse;
 }
 
+.navbar .nav-link:active {
+    color: hsl(4, 84%, 22%);
+}
+
 /* .navegacion {
     grid-area: navegacion;
     font-size: 27px;
