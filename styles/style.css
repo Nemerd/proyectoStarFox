@@ -86,6 +86,12 @@ a:active {
     bottom: 0;
 }
 
+.descripcion::first-letter{
+    font-size: 2rem;
+    float: left;
+    margin-right: 5px;
+}
+
 .titulo {
     color: hsl(4, 84%, 22%);
     position: absolute;
@@ -103,7 +109,6 @@ a:active {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 
 .tarjeta {
     /* Creamos flexbox vertical
