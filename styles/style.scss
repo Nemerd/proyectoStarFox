@@ -32,8 +32,11 @@ a:active {
     background-color: chartreuse;
 }
 
-.navbar .nav-link:active {
-    color: hsl(4, 84%, 22%);
+.navbar {
+    .nav-link:active {
+        color: hsl(4, 84%, 22%);
+
+    }
 }
 
 /* .navegacion {
@@ -155,8 +158,14 @@ a:active {
     font-size: 25px;
 }
 
-.tabla tbody tr td {
-    padding: 20px;
+.tabla {
+    tbody {
+        tr {
+            td{
+                padding: 20px;
+            }
+        }
+    }
 }
 
 .imagen {
@@ -214,8 +223,14 @@ footer {
 }
 
 @media (max-width:375px) {
-    .tabla tbody tr td {
-        padding: 0;
+    .tabla {
+        tbody {
+            tr {
+                td{
+                    padding: 0;
+                }
+            }
+        }
     }
 
     .imagen {
