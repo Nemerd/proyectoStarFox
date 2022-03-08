@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* display: grid;
+    grid-template-areas:
+        "navegacion navegacion navegacion"
+        "poster poster poster"
+        "tarjetas tarjetas tarjetas"
+        ". formulario ."
+        ". footer .";
+    grid-template-columns: repeat(3, 1fr); */
+    background-image: url(../images/starry-background.jpg);
+}
+
+a {
+    color: #0d6efd;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: hsl(4, 84%, 22%);
+    }
+}
