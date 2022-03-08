@@ -1,41 +1,13 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    /* display: grid;
-    grid-template-areas:
-        "navegacion navegacion navegacion"
-        "poster poster poster"
-        "tarjetas tarjetas tarjetas"
-        ". formulario ."
-        ". footer .";
-    grid-template-columns: repeat(3, 1fr); */
-    background-image: url(../images/starry-background.jpg);
-}
-
-a {
-    color: #0d6efd;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:active {
-    color: hsl(4, 84%, 22%);
-}
+@import './scss/global';
+@import './scss/tablas';
+@import './scss/queries';
 
 .navbar {
     background-color: chartreuse;
-}
-
-.navbar {
-    .nav-link:active {
-        color: hsl(4, 84%, 22%);
-
+    .nav-link{
+        &:active {
+            color: hsl(4, 84%, 22%);
+        }
     }
 }
 
@@ -87,12 +59,11 @@ a:active {
     "position: relative;" para que funcione. */
     position: absolute;
     bottom: 0;
-}
-
-.descripcion::first-letter{
-    font-size: 2rem;
-    float: left;
-    margin-right: 5px;
+    &::first-letter{
+        font-size: 2rem;
+        float: left;
+        margin-right: 5px;
+    }
 }
 
 .titulo {
@@ -127,11 +98,10 @@ a:active {
     width: 300px;
     background-color: white;
     transition: transform 0.5s;
-}
-
-.tarjeta:hover {
-    z-index: 1;
-    transform: scale(1.2, 1.2);
+    &:hover {
+        z-index: 1;
+        transform: scale(1.2, 1.2);
+    }
 }
 
 /* .imgDeTarjeta {
@@ -146,32 +116,16 @@ a:active {
     background-color: whitesmoke;
 }
 
-.form-control:focus {
-    border-color: chartreuse;
-    box-shadow: 0px 0px 5px 0.25rem chartreuse;
-}
-
-.tabla {
-    grid-area: poster;
-    justify-self: center;
-    background-color: white;
-    font-size: 25px;
-}
-
-.tabla {
-    tbody {
-        tr {
-            td{
-                padding: 20px;
-            }
-        }
+.form-control{
+    &:focus {
+        border-color: chartreuse;
+        box-shadow: 0px 0px 5px 0.25rem chartreuse;
     }
 }
 
 .imagen {
     height: 200px;
 }
-
 
 footer {
     grid-area: footer;
@@ -192,48 +146,5 @@ footer {
 
     100% {
         opacity: 0;
-    }
-}
-
-/* Mobile last */
-/* Laptop */
-@media (max-width:1400px) {
-    .descripcion {
-        font-size: 17px;
-    }
-}
-
-/* Antes que tablet */
-@media (max-width:950px) {
-    .descripcion {
-        position: static;
-    }
-}
-
-/* Mobile L */
-@media (max-width:425px) {
-    .botonMenu {
-        display: inline;
-
-    }
-
-    .listaDeNavegacion {
-        display: none;
-    }
-}
-
-@media (max-width:375px) {
-    .tabla {
-        tbody {
-            tr {
-                td{
-                    padding: 0;
-                }
-            }
-        }
-    }
-
-    .imagen {
-        height: 5em;
     }
 }
