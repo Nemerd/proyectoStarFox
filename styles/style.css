@@ -25,30 +25,6 @@ a:active {
   color: #670f09;
 }
 
-/* .navegacion {
-    grid-area: navegacion;
-    font-size: 27px;
-    background-color: chartreuse;
-    padding: 3px;
-} */
-/* .botonMenu {
-    grid-area: navegacion;
-    padding: 2px;
-    background: none;
-    border-radius: 3px;
-    border: 1px solid black;
-    display: none;
-} */
-/* .listaDeNavegacion {
-    width: 3fr;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style-type: none;
-} */
-/* .sinSubrayado {
-    text-decoration: none;
-} */
 .portada {
   display: flex;
   flex-direction: column;
@@ -103,10 +79,10 @@ a:active {
   border-radius: 20px 20px 0 0;
   width: 300px;
   background-color: white;
-  transition: transform 0.5s;
 }
 .tarjeta:hover {
   z-index: 1;
+  transition: transform 0.5s;
   transform: scale(1.2, 1.2);
 }
 
@@ -139,8 +115,26 @@ footer {
   font-size: 25px;
 }
 
-.tabla tbody tr td {
+td, .td-img {
   padding: 20px;
+}
+
+.td-img {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.td-img-sm:hover {
+  z-index: 1;
+  transition: transform 0.5s;
+  transform: scale(4, 4);
+  padding: 0px;
+}
+
+.td-img-med:hover {
+  z-index: 1;
+  transition: transform 0.5s;
+  transform: scale(1.5, 1.5);
 }
 
 /* Animaciones */
@@ -179,7 +173,7 @@ footer {
   }
 }
 @media (max-width: 375px) {
-  .tabla tbody tr td {
+  .tabla tbody tr td, .tabla tbody tr .td-img {
     padding: 0;
   }
 

@@ -28,39 +28,9 @@ a {
     }
 }
 
-/* .navegacion {
-    grid-area: navegacion;
-    font-size: 27px;
-    background-color: chartreuse;
-    padding: 3px;
-} */
-
-/* .botonMenu {
-    grid-area: navegacion;
-    padding: 2px;
-    background: none;
-    border-radius: 3px;
-    border: 1px solid black;
-    display: none;
-} */
-
-
-/* .listaDeNavegacion {
-    width: 3fr;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style-type: none;
-} */
-
-/* .sinSubrayado {
-    text-decoration: none;
-} */
-
 .portada {
     display: flex;
     flex-direction: column;
-
     /* Necesario para que "position: absolute;"
     funcione en el hijo */
     position: relative;
@@ -113,10 +83,8 @@ a {
     border-radius: 20px 20px 0 0;
     width: 300px;
     background-color: white;
-    transition: transform 0.5s;
     &:hover {
-        z-index: 1;
-        transform: scale(1.2, 1.2);
+        @include agrandar-al-pasar(1.2);
     }
 }
 

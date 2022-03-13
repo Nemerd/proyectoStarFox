@@ -1,20 +1,20 @@
 /* Mobile last */
 /* Laptop */
-@media (max-width:1400px) {
+@media (max-width:$extra-grande) {
     .descripcion {
         font-size: 17px;
     }
 }
 
 /* Antes que tablet */
-@media (max-width:950px) {
+@media (max-width:$grande) {
     .descripcion {
         position: static;
     }
 }
 
 /* Mobile L */
-@media (max-width:425px) {
+@media (max-width:$mediano) {
     .botonMenu {
         display: inline;
 
@@ -25,7 +25,7 @@
     }
 }
 
-@media (max-width:375px) {
+@media (max-width:$chico) {
     .tabla {
         tbody {
             tr {

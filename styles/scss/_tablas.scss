@@ -5,11 +5,28 @@
     font-size: 25px;
 }
 
-.tabla {
-    tbody {
-        tr {
-            td{
-                padding: 20px;
+td{
+    padding: 20px;
+}
+
+// Extend
+.td-img{
+    @extend td;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+// Aplicamos un mapa para modificar segun el tamaño de la imagen
+@each $tamaño, $factor in $mapa-de-tamaños {
+    // El numeral+llaves llama al identificador, no al valor
+    .td-img-#{$tamaño} {
+        &:hover{
+            // Aplicamos el mixin
+            @include agrandar-al-pasar($factor);
+            // Condicional if
+            @if #{$tamaño} == sm {
+                padding: 0px;
             }
         }
     }
