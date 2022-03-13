@@ -1,0 +1,6 @@
+// Mixins
+@mixin agrandar-al-pasar($tamaño) {
+    z-index: 1;
+    transition: transform 0.5s;
+    transform: scale($tamaño, $tamaño);
+}
