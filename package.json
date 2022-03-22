@@ -1,10 +1,9 @@
 {
-  "name": "proyect-star-fox",
+  "name": "proyecto-star-fox",
   "version": "1.0.0",
   "description": "Proyecto Star Fox es un proyecto de práctica a fin de ganar experiencia en el desarrollo web. Escrito por Moisés Mubarqui 2022",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "autorun": "sass ./styles/style.scss ./styles/style.css -w --no-source-map"
   },
   "repository": {
